@@ -9,9 +9,12 @@
     #define DEBUG                     false         // Set this to true to receive debugging messages out the serial port. NOTE: This will make the program less responsive, 
                                                     // so turn it off when you are done troubleshooting. 
 
-// STREET PARTS
-// ----------------------------
+// TIMEOUTs
 
+#define oneSecond 100
+#define oneMinute (60 * oneSecond)
+
+#define intWatchdogTimeout (30 * oneSecond)
 
 
 
