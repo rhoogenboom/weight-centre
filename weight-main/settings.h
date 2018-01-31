@@ -6,15 +6,25 @@
 
 // DEBUGGING
 // ------------------------------------------------------------------------------------------------------------------------------------------------>
-    #define DEBUG                     false         // Set this to true to receive debugging messages out the serial port. NOTE: This will make the program less responsive, 
+    #define DEBUG                     true         // Set this to true to receive debugging messages out the serial port. NOTE: This will make the program less responsive, 
                                                     // so turn it off when you are done troubleshooting. 
 
 // TIMEOUTs
 
-#define oneSecond 100
-#define oneMinute (60 * oneSecond)
+const int oneSecond = 1000;
+const long oneMinute = (60 * oneSecond);
 
-#define intWatchdogTimeout (30 * oneSecond)
+const long intWatchdogTimeout = (30 * oneSecond);
 
+const int truckArrivePin = 2;      // the number of the pushbutton pin for trucks arriving
+
+const int truckArriveRed =  3;  // RED LED at entrance 
+const int truckArriveGreen = 4;  // GREEN LED at entrance 
+
+
+const int truckWeightWaitingRed = 5; // RED LED at weighting platform
+const int truckWeightWaitingGreen = 6; // GREEN LED at weighting platform
+
+const int weightSequenceTimeout = (10 * oneSecond);
 
 
